@@ -83,14 +83,121 @@ body{font-size:17px;line-height:1.72}
 footer{font-size:13px}
 @media(max-width:850px){.navlinks a{font-size:12px}}
 @media(max-width:500px){body{font-size:16px}.prose{font-size:16px;line-height:1.72}.note,.mini-grid .note{font-size:16px}.lead{font-size:25px}.smallcaps{font-size:12px}.navlinks a{font-size:12px}.keywords span{font-size:15px}.talk-list p{font-size:16px}.talk-list .smallcaps{font-size:12px}.projects p,.contact p{font-size:16px}.talk-list article{padding:28px 25px 31px}.video-box{padding:23px}.links a,.action{font-size:15px}}
+</style><style>
+/* Media and contact – consistent with VoiceWorld's editorial design */
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px;align-items:stretch}
+.media-panel{padding:20px;background:linear-gradient(145deg,#fff,#f7fafb);border:1px solid #d9e4e8;border-radius:14px;min-width:0;box-shadow:0 10px 26px rgba(25,57,79,.035)}
+.media-panel:nth-child(2){background:linear-gradient(145deg,#fff,#f9f3fb);border-color:#e3dbe8}
+.media-panel h3{font:500 clamp(27px,3vw,34px)/1.1 var(--serif);color:#195a6d;margin-bottom:12px}
+.media-panel p{font-size:16px;line-height:1.6;color:#526877;margin-top:12px}
+.media-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;display:block;background:#e5eef0;overflow:hidden}
+.media-frame.spotify{height:352px;aspect-ratio:auto}
+.video-placeholder{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:22px;background:linear-gradient(145deg,#e9f5f6,#eff0f8 68%,#f6e9f4);color:#175467;gap:12px}
+.play-symbol{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#fff;color:#1a657a;font-size:24px;box-shadow:0 4px 17px #315b6e20}
+.media-link{display:inline-block;margin-top:14px;border-bottom:1px solid #82b6c0;padding-bottom:3px;font-size:16px;color:#146e80}
+.contact{background:linear-gradient(128deg,#f1f8f9,#fbf4fb 72%,#f9f8fb)}
+.contact-intro{max-width:680px;margin:0 auto 22px}
+.contact-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:24px}
+.contact-pill{display:inline-flex;align-items:center;justify-content:center;border:1px solid #98c5cc;color:#185a6d;background:#ffffff;padding:12px 20px;border-radius:999px;font-size:16px;line-height:1.3;transition:transform .2s,background .2s}
+.contact-pill:hover{background:#e9f7f8;transform:translateY(-1px)}
+.contact-pill.primary{color:#fff;background:linear-gradient(115deg,#116d82,#725489);border:0}
+.contact-pill.primary:hover{background:#145d70}
+.form-shell{width:min(740px,100%);margin:26px auto 0;padding:18px;border:1px solid #d4e2e7;background:#fff;border-radius:14px;text-align:left}
+.form-shell iframe{display:block;width:100%;height:760px;border:0;border-radius:8px;background:white}
+.form-shell h3{font:500 31px/1.1 var(--serif);color:#23556b;margin-bottom:6px}
+.form-shell p{font-size:16px;color:#4d6574}
+.contact-placeholder{max-width:650px;margin:20px auto 0;color:#5c7080;font-size:15px!important}
+@media(max-width:760px){.media-grid{grid-template-columns:1fr}.media-panel{padding:16px}.media-frame.spotify{height:352px}.contact-pill{width:100%}.form-shell{padding:12px}.form-shell iframe{height:870px}}
 </style></head><body>
 <header class="nav"><div class="shell nav-inner"><a class="brand" href="#accueil">VoiceWorld</a><nav aria-label="Navigation" class="navlinks"><a href="#apropos">À propos</a><a href="#coaching">Coaching</a><a href="#ateliers">Ateliers</a><a href="#musique">Musique</a><a href="#conferences">Conférences</a><a href="#contact">Contact</a></nav></div></header>
 <main><section class="hero" id="accueil"><div class="shell hero-content"><div class="smallcaps">Voix · Expression · Scène</div><h1>VoiceWorld</h1><div class="hero-sub">Le Chant des Possibles</div><div class="hero-line"></div></div></section>
 <section class="section" id="apropos"><div class="shell two"><div class="image-wrap"><img alt="Susan Brown interprétant une chanson au micro, main levée" class="photo portrait" src="assets/portrait_a_propos.jpg"/><div class="caption">Photo : Christophe Zahm</div></div><div class="copy"><div class="smallcaps">À propos</div><h2>La voix dans tous ses états</h2><p class="lead">Chanteuse, musicienne et coach : la voix est au cœur de mon parcours.</p><p class="prose">Franco-britannique, j’ai exploré le chant, le théâtre et la scène en France, en Irlande et en Angleterre. Formée à Dublin, à la Sorbonne Nouvelle et au coaching professionnel, j’accompagne aujourd’hui artistes et professionnels pour les aider à trouver leur voix — et leur place.</p></div></div></section>
 <section class="section coaching" id="coaching"><div class="shell two"><div class="copy"><div class="smallcaps">Coaching vocal · Art oratoire · Négociation</div><h2>L'Académie de la Voix</h2><p class="phrase">Si votre voix pouvait parler, que dirait-elle de vous ?</p><p class="prose">Une approche vivante et sur mesure pour affirmer sa présence, développer son éloquence et gagner en aisance — sur scène, devant un public ou dans la négociation.</p><div class="keywords"><span>Technique vocale</span><span>Expression scénique</span><span>Prise de parole</span><span>Argumentation &amp; négociation</span></div><a class="action" href="#contact">Parlons de votre projet ↗</a></div><div class="image-wrap"><img alt="Susan Brown chantant au micro, de profil, sous les lumières rouges" class="photo" src="assets/chant_rouge_profil.jpg"/></div></div><div class="shell subsection"><div class="smallcaps">Formations &amp; interventions</div><div class="mini-grid"><div><h3>Pour les artistes</h3><p class="note">Coaching individuel, interprétation, voix chantée et parlée, présence scénique.</p></div><div><h3>Pour les écoles et les entreprises</h3><p class="note">Programmes sur mesure pour écoles d'ingénieurs, équipes et managers : prise de parole, pitch, storytelling, communication et négociation.</p></div></div></div></section>
 <section class="section" id="ateliers"><div class="shell"><div class="smallcaps">Ateliers</div><h2>Ateliers &amp; expériences</h2><p class="prose" style="max-width:740px">Des ateliers participatifs fondés sur l'expérimentation, le jeu et la mise en situation. Parmi eux, une série d'ateliers <strong>« Chanter en anglais »</strong> consacrée à la prononciation, au rythme et à l'interprétation du répertoire anglophone.</p><div class="subsection"><h3>Le coaching en action</h3><p class="note">Deux extraits vidéo d'ateliers seront intégrés ici.</p><div class="mini-grid"><div class="video-box"><div><div class="smallcaps">Vidéo 01</div><h3>Chanter en anglais</h3><p class="note">Démonstration et travail en atelier.</p></div><a href="https://www.youtube.com/@chenoabee" rel="noopener noreferrer" target="_blank">Découvrir ma chaîne YouTube ↗</a></div><div class="video-box"><div><div class="smallcaps">Vidéo 02</div><h3>Coaching en situation</h3><p class="note">Un deuxième extrait à découvrir prochainement.</p></div><a href="#contact">Me contacter ↗</a></div></div><!-- Vidéos : remplacer chaque carte par un iframe youtube-nocookie.com/embed/VIDEO_ID dès réception des URLs exactes. --></div></div></section>
-<section class="section soft" id="musique"><div class="shell"><div class="smallcaps">Chanteuse · Musicienne</div><h2>Musique &amp; scène</h2><p class="prose" style="max-width:680px">Chant, guitare, concerts et enregistrements. Un univers musical à écouter et à voir.</p><div class="music-pictures"><img alt="Susan Brown sur scène à la guitare" src="assets/guitare_scene.jpg"/><img alt="Susan Brown en concert avec d'autres musiciens" src="assets/groupe_scene.jpg"/></div><div class="links"><a href="https://www.youtube.com/@chenoabee" rel="noopener noreferrer" target="_blank">YouTube ↗</a><a href="https://open.spotify.com/artist/2byOf8xyfKvmbrrokazVCj" rel="noopener noreferrer" target="_blank">Spotify ↗</a><a href="https://music.apple.com/fr/artist/susan-brown/1721825292" rel="noopener noreferrer" target="_blank">Apple Music ↗</a></div><div class="spotify-wrap"><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="https://open.spotify.com/embed/artist/2byOf8xyfKvmbrrokazVCj?utm_source=generator" title="Écouter Susan Brown sur Spotify"></iframe></div><div class="projects"><div class="smallcaps">À l'horizon 2027</div><h3>De nouveaux projets musicaux</h3><p>Compositions originales et projet musical autour du répertoire de Radiohead. Des créations et des concerts à suivre ici.</p></div></div></section>
+<section class="section soft" id="musique"><div class="shell"><div class="smallcaps">Chanteuse · Musicienne</div><h2>Musique &amp; scène</h2><p class="prose" style="max-width:680px">Chant, guitare, concerts et enregistrements. Un univers musical à écouter et à voir.</p><div class="music-pictures"><img alt="Susan Brown sur scène à la guitare" src="assets/guitare_scene.jpg"/><img alt="Susan Brown en concert avec d'autres musiciens" src="assets/groupe_scene.jpg"/></div><div class="links"><a href="https://music.apple.com/fr/artist/susan-brown/1721825292" rel="noopener noreferrer" target="_blank">Apple Music ↗</a></div>
+<div aria-label="Écouter et regarder" class="media-grid">
+<article class="media-panel">
+<h3>Écouter · Spotify</h3>
+<iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="media-frame spotify" loading="lazy" src="https://open.spotify.com/embed/artist/2byOf8xyfKvmbrrokazVCj?utm_source=generator" title="Écouter Susan Brown sur Spotify"></iframe>
+<a class="media-link" href="https://open.spotify.com/artist/2byOf8xyfKvmbrrokazVCj" rel="noopener noreferrer" target="_blank">Ouvrir Spotify ↗</a>
+</article>
+<article class="media-panel">
+<h3>Regarder · YouTube</h3>
+<div id="youtube-player"><div class="media-frame video-placeholder"><span aria-hidden="true" class="play-symbol">▶</span><span>Une vidéo musicale à découvrir ici prochainement</span></div></div>
+<a class="media-link" href="https://www.youtube.com/@chenoabee" rel="noopener noreferrer" target="_blank">Voir ma chaîne YouTube ↗</a>
+</article>
+</div>
+<div class="projects"><div class="smallcaps">À l'horizon 2027</div><h3>De nouveaux projets musicaux</h3><p>Compositions originales et projet musical autour du répertoire de Radiohead. Des créations et des concerts à suivre ici.</p></div></div></section>
 <section class="section talks" id="conferences"><div class="shell"><div class="smallcaps">Conférences</div><h2>Conférences &amp; rencontres</h2><p class="prose" style="max-width:740px">Des conférences vivantes, à la rencontre des langues, des idées et de l’art de communiquer.</p><div class="talk-list"><article class="talk-feature"><div class="smallcaps">Conférence à la une · 2026</div><h3>Français et anglais : deux langues, une même histoire</h3><p>Deux langues, des siècles de rencontres. Un voyage accessible et surprenant dans leur histoire croisée.</p></article><article class="talk-future"><div class="smallcaps">À venir · 2027</div><h3>De nouvelles conférences</h3><p>Voix, langage, communication et art de convaincre : de nouveaux sujets en préparation pour 2027.</p></article></div></div></section>
-<section class="contact" id="contact"><div class="shell"><div class="smallcaps">Contact</div><h2>Échangeons</h2><p>Coaching, ateliers, formation, scène ou conférence.</p><a class="action" href="https://www.linkedin.com/in/virtuallysue/" rel="noopener noreferrer" target="_blank">Me contacter sur LinkedIn ↗</a></div></section></main>
+<section class="contact" id="contact">
+<div class="shell"><div class="smallcaps">Contact</div><h2>Parlons de votre projet</h2>
+<p class="contact-intro">Coaching, formation, atelier, conférence ou programmation musicale : racontez-moi votre projet.</p>
+<div class="contact-actions" id="contact-links"><a class="contact-pill" href="https://www.linkedin.com/in/virtuallysue/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a></div>
+<div id="google-form-area"><p class="contact-placeholder">Un formulaire de demande sera disponible ici prochainement. En attendant, vous pouvez me joindre sur LinkedIn.</p></div>
+</div>
+</section></main>
 <footer><div class="shell foot"><span>VoiceWorld · Le Chant des Possibles</span><a href="#accueil">Retour en haut ↑</a></div></footer>
-</body></html>
+<script>
+/* CONFIGURATION VOICEWORLD : remplacer les valeurs vides lorsque les liens seront connus.
+   youtubeVideo: adresse YouTube d'une vidéo (https://youtu.be/ID ou https://www.youtube.com/watch?v=ID)
+   instagram: adresse de votre profil Instagram
+   googleForm: URL publique Google Forms se terminant par /viewform
+*/
+const VOICEWORLD_LINKS = {
+  youtubeVideo: "",
+  instagram: "",
+  googleForm: ""
+};
+(function(){
+  const config = VOICEWORLD_LINKS;
+  if(config.youtubeVideo){
+    let videoId = '';
+    try{
+      const u = new URL(config.youtubeVideo);
+      if(u.hostname==='youtu.be'||u.hostname==='www.youtu.be') videoId=u.pathname.slice(1).split('/')[0];
+      else if(['youtube.com','www.youtube.com','m.youtube.com'].includes(u.hostname)){
+        videoId = u.pathname.startsWith('/shorts/')||u.pathname.startsWith('/embed/') ? u.pathname.split('/')[2] : u.searchParams.get('v')||'';
+      }
+    }catch(e){}
+    if(/^[A-Za-z0-9_-]{11}$/.test(videoId)){
+      const frame = document.createElement('iframe');
+      frame.className='media-frame';
+      frame.title='Performance musicale — YouTube';
+      frame.src='https://www.youtube-nocookie.com/embed/'+videoId;
+      frame.loading='lazy';
+      frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      frame.allowFullscreen=true;
+      const container=document.getElementById('youtube-player');
+      if(container)container.replaceChildren(frame);
+    }
+  }
+  if(config.instagram){
+    try{
+      const u=new URL(config.instagram);
+      if(u.protocol==='https:' && ['instagram.com','www.instagram.com'].includes(u.hostname)){
+        const a=document.createElement('a');a.className='contact-pill';a.href=u.href;
+        a.target='_blank';a.rel='noopener noreferrer';a.textContent='Instagram ↗';
+        document.getElementById('contact-links').append(a);
+      }
+    }catch(e){}
+  }
+  if(config.googleForm){
+    try{
+      const u=new URL(config.googleForm);
+      if(u.protocol==='https:'&&u.hostname==='docs.google.com'&&u.pathname.includes('/forms/')&&u.pathname.endsWith('/viewform')){
+        const area=document.getElementById('google-form-area');
+        area.replaceChildren();
+        const shell=document.createElement('div');shell.className='form-shell';
+        const title=document.createElement('h3');title.textContent='Votre demande';shell.append(title);
+        const frame=document.createElement('iframe');frame.title='Formulaire de contact VoiceWorld';
+        u.searchParams.set('embedded','true');frame.src=u.href;frame.loading='lazy';
+        shell.append(frame);area.append(shell);
+        const link=document.createElement('a');link.href=config.googleForm;
+        link.className='contact-pill primary';link.textContent='Ouvrir le formulaire ↗';
+        link.target='_blank';link.rel='noopener noreferrer';
+        document.getElementById('contact-links').prepend(link);
+      }
+    }catch(e){}
+  }
+})();
+</script></body></html>
