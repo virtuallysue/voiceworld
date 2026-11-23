@@ -551,6 +551,111 @@ footer{background:#102e43;color:#e1ece8}
 /* Mobile : les nouveaux contrastes restent stables aux petits formats. */
 @media(max-width:760px){.hero{background:linear-gradient(155deg,#153b52,#195d61)}.contact{background:#153b52}}
 
+
+/* V32 — version lumineuse / bleu lagon, bleu profond, ivoire et cuivre satiné.
+   Retouches chromatiques seulement : structure, contenus et images inchangés. */
+:root{
+ --ink:#203949;
+ --paper:#fffaf3;
+ --soft:#f2f8f5;
+ --muted:#586a70;
+ --red:#b86b46;
+ --red-dark:#98583e;
+ --berry:#398b87;
+ --teal:#398b87;
+ --peach:#f3c391;
+ --stroke:#dbe9e5;
+ --dark:#23465e;
+ --champagne:#f3d39d;
+ --copper:#d98d67;
+ --sea:#398b87;
+}
+body{background:#fffaf3;color:#203949}
+::selection{background:#dcefeb;color:#173e54}
+.eyebrow,.section-title em{color:#ad694a}
+.body-copy,.bio-text,.coaching-lead>p:not(.coaching-kicker),.coaching-topic p{color:#4f6368}
+/* Quietly brighter top, avoiding a wall of dark blue */
+.site-header{background:#24465c;border-bottom:1px solid rgba(246,224,186,.24)}
+.logo b,.nav a:hover{color:#f3d39d}
+.logo-sub{color:#e0eee9}
+.hero{background:linear-gradient(118deg,#26465d 0%,#1c566c 52%,#23776f 100%)}
+.hero:before{background:radial-gradient(circle at 12% 10%,rgba(129,205,188,.14),transparent 40%),radial-gradient(circle at 92% 14%,rgba(123,205,190,.23),transparent 41%),radial-gradient(circle at 80% 89%,rgba(238,170,116,.15),transparent 33%)}
+.hero .eyebrow{color:#f4d8ac}
+.hero-title em,.poster-title em{color:#f3d39d}
+.hero-note{color:#f6f5ed}
+.hero-poster{background:linear-gradient(150deg,#255770 0%,#1c4d64 48%,#287b76 100%);border-color:rgba(243,211,157,.30)}
+.hero-poster:before{background:radial-gradient(circle,rgba(238,165,110,.20),transparent 70%)}
+.hero-poster:after{background:radial-gradient(circle,rgba(90,194,177,.27),transparent 70%)}
+.poster-kicker,.poster-note small{color:#f7e3c6}
+.poster-note b{color:#f3d39d}
+/* A clear luminous cadence across page sections */
+.services{background:#f4f7f2}
+.service-card{background:#fffdfa;border-color:#d9e6df;box-shadow:0 9px 28px rgba(28,76,82,.035)}
+.service-card:hover{background:#fcfffd;border-color:#a9d2c6}
+.service-count,.service-arrow{color:#b76d4d}
+.statement{background:#eaf3ed}
+.statement em{color:#318780}
+.statement .eyebrow{color:#54847f}
+.vocal-detail{background:#fffaf3}
+.speaking-detail{background:#f0f7f4}
+.coaching-kicker{color:#2d5262}
+.coaching-content{border-color:#d7e5de}
+.coaching-topic{border-bottom-color:#d7e5de}
+.coaching-topic-label,#coaching-vocal .coaching-group-label{color:#34857f}
+#coaching-vocal .coaching-topic-card{
+ background:linear-gradient(130deg,#fffefb 0%,#f5faf6 100%);
+ border-color:#d4e7df;
+ border-left:3px solid #54a49c;
+ box-shadow:0 12px 31px rgba(31,94,90,.065)
+}
+.coaching-flex{border-left-color:#54a49c;background:#fffdfa;color:#314f59}
+.workshops{background:#f5f7f2}
+.workshop-media{background:linear-gradient(180deg,#fffefa,#f7fbf7);border-color:#d6e7dd}
+.workshop-media:before{color:#3b938a}
+.workshop-option{background:#fffef9;border-color:#d1e3db}
+.workshop-option p,.workshop-media p{color:#536669}
+.gallery{background:#fffaf4}
+.talks{background:#f1f6f2}
+.talk-card{background:#fffefa;border-color:#dce9e1;border-left:3px solid #65a99f}
+/* Music keeps theatrical depth, but with lighter teal-blue accents and cooler cards */
+.music{background:linear-gradient(125deg,#24445e 0%,#1f4c65 58%,#236b6d 100%);color:#fffaf3}
+.music .eyebrow,.music .section-title em{color:#f3d39d}
+.music .intro{color:#f1f5ee}
+.music-detail{background:linear-gradient(155deg,#2c5c70 0%,#2c6d70 100%)}
+.music-detail p{color:#f3f7f2}
+.music-platforms .music-player,.music-youtube-feature{
+ background:linear-gradient(148deg,#315e72 0%,#275a67 100%);
+ border:1px solid rgba(239,214,175,.27);
+ box-shadow:0 11px 28px rgba(12,42,61,.11)
+}
+.music-platforms .music-player>span,.music-youtube-copy .eyebrow{color:#f3d39d}
+.music-sub-link{color:#f9dec0;border-bottom-color:rgba(243,211,157,.68)}
+.music .music-main-cta{background:#e6a77d;border-color:#e6a77d;color:#183e50}
+.music .music-main-cta:hover{background:#f2bd96;border-color:#f2bd96}
+.music-links a{border-bottom-color:#f3d39d}
+/* Light terracotta: prominent contact buttons without heavy blocks */
+.coaching-detail .textlink,.talks .textlink,.workshop-option a{
+ background:linear-gradient(135deg,#f3bc98 0%,#e9a77f 100%);
+ border:1.5px solid #c98765;
+ color:#294657;
+ box-shadow:0 5px 15px rgba(157,103,70,.12);
+}
+.coaching-detail .textlink:hover,.talks .textlink:hover,.workshop-option a:hover{
+ background:linear-gradient(135deg,#f8caa9 0%,#f1b38b 100%);
+ border-color:#b97958;
+ color:#204355;
+ box-shadow:0 7px 18px rgba(157,103,70,.17);
+}
+.coaching-detail .textlink:focus-visible,.talks .textlink:focus-visible,.workshop-option a:focus-visible{outline-color:#38958c}
+.btn-red,.nav .nav-contact{background:#e6a77d;border-color:#e6a77d;color:#1e4354}
+.btn-red:hover,.nav .nav-contact:hover{background:#f3c093;border-color:#f3c093;color:#1e4354}
+.contact{background:linear-gradient(130deg,#284b63 0%,#245d6c 100%);color:#fffaf3}
+.contact .eyebrow,.contact .section-title em{color:#f3d39d}
+.contact p,.contact-message p{color:#f1f4ee}
+.contact-social a{border-bottom-color:#f3d39d;color:#fffaf3}
+footer{background:#203e54;color:#e5f0ea}
+.footer-flex a{color:#f3d39d}
+@media(max-width:760px){.hero{background:linear-gradient(155deg,#285066,#23716c)}.contact{background:linear-gradient(155deg,#284b63,#245d6c)}}
 </style>
 </head>
 <body>
