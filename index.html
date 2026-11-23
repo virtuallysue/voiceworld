@@ -423,6 +423,34 @@ footer{background:#211a35}
    text-align:center;
  }
 }
+
+/* V30 — trois piliers de coaching vocal, sans numérotation */
+#coaching-vocal .coaching-content{border-top:0;display:grid;gap:14px}
+#coaching-vocal .coaching-group-label{font:700 12px/1.5 var(--display);letter-spacing:.14em;color:#994e67;margin-bottom:4px}
+#coaching-vocal .coaching-topic-card{
+ border:1px solid #ddc4ca;
+ border-left:3px solid #bb718a;
+ border-radius:9px;
+ padding:25px clamp(23px,2.7vw,34px) 27px;
+ background:linear-gradient(115deg,#fffdf9 0%,#f9f1f2 100%);
+ box-shadow:0 9px 24px rgba(58,39,67,.045);
+}
+#coaching-vocal .coaching-topic-card h3{font-size:clamp(26px,2.45vw,34px);line-height:1.17}
+#coaching-vocal .coaching-topic-card p{font-size:16px;line-height:1.7}
+/* V30 — contact form CTAs: warmer and brighter, without heavy dark fills */
+.coaching-detail .textlink,.talks .textlink,.workshop-option a{
+ background:#edb0b0;
+ border-color:#c56c80;
+ color:#542a44;
+ box-shadow:0 4px 12px rgba(165,70,99,.13);
+ font-weight:700;
+}
+.coaching-detail .textlink:hover,.talks .textlink:hover,.workshop-option a:hover{
+ background:#e494a2;
+ border-color:#ac5374;
+ color:#3b2038;
+ box-shadow:0 6px 17px rgba(165,70,99,.19);
+}
 </style>
 </head>
 <body>
@@ -444,10 +472,7 @@ footer{background:#211a35}
 <p>Mon travail consiste à vous enseigner les techniques de chant, bien sûr, mais aussi et surtout à vous donner les clés pour trouver votre voix et votre style, selon vos aspirations et votre personnalité.</p>
 <a class="textlink" href="https://docs.google.com/forms/d/e/1FAIpQLSfR9nRazxEXFbNk45ITbph6QbWxK6ki3lMsfRRdWmO7Nmc6Kg/viewform" rel="noopener noreferrer" target="_blank">Parlons de votre voix ↗</a>
 </div>
-<div class="coaching-content">
-<div class="coaching-topic"><span class="coaching-topic-label">LA TECHNIQUE ET L’INTERPRÉTATION</span><h3>Développer, explorer, perfectionner.</h3><p>Respiration, justesse, placement de la voix, harmonie, improvisation, maîtrise de la scène et contact avec le public : nous travaillons les techniques qui vous permettent de gagner en aisance et en liberté.</p></div>
-<div class="coaching-topic"><span class="coaching-topic-label">CHANTER EN ANGLAIS</span><h3>Les mots, les sons, le sens.</h3><p>Un travail de précision sur la prononciation de l’anglais chanté, avec toute l’attention que méritent ses subtilités culturelles.</p></div>
-</div>
+<div class="coaching-content"><div class="coaching-group-label">LA TECHNIQUE VOCALE ET L’INTERPRÉTATION</div><div class="coaching-topic coaching-topic-card"><span class="coaching-topic-label">TECHNIQUE VOCALE</span><h3>Développer, explorer, perfectionner.</h3><p>Respiration, justesse, placement de la voix, harmonie, improvisation : nous travaillons les techniques qui vous permettent de gagner en aisance, en liberté et en confiance.</p></div><div class="coaching-topic coaching-topic-card"><span class="coaching-topic-label">INTERPRÉTATION</span><h3>Trouver sa voix, habiter ce que l’on chante.</h3><p>Parce qu’une voix ne se résume pas à une technique, nous travaillons aussi l’intention, la présence, le rapport au texte, à l’émotion, à la scène et au public.</p></div><div class="coaching-topic coaching-topic-card"><span class="coaching-topic-label">CHANTER EN ANGLAIS</span><h3>Les mots, les sons, le sens.</h3><p>Un travail de précision sur la prononciation de l’anglais chanté, avec toute l’attention que méritent ses subtilités culturelles, son rythme et sa couleur.</p></div></div>
 </div>
 </section><section aria-labelledby="speaking-title" class="section coaching-detail speaking-detail" id="prise-de-parole">
 <div class="wrap coaching-detail-grid">
@@ -466,7 +491,6 @@ footer{background:#211a35}
 </div>
 </section>
 <section class="statement"><div class="wrap"><span class="eyebrow">L’esprit VoiceWorld</span><blockquote>De la technique, de la pratique.<br/>Et surtout, <em>oser être soi.</em></blockquote></div></section>
-
 <section class="section workshops" id="ateliers"><div class="wrap section-grid"><div><span class="eyebrow">Ateliers &amp; formations</span><h2 class="section-title">On apprend<br/><em>en faisant.</em></h2><p class="intro">Ici, on entre dans le vif du sujet : on essaie, on écoute, on ajuste. Des exercices vivants, des échanges francs et des retours précis pour avancer ensemble.</p><p class="body-copy" style="margin-top:23px">Je conçois et j’anime des ateliers sur mesure, adaptés à des publics et des contextes variés : particuliers, associations, entreprises, établissements d’enseignement et structures culturelles. Chaque proposition se construit autour de vos envies et de vos objectifs, pour que chacun participe, gagne en confiance et reparte avec des outils concrets.</p><div class="workshop-ctas"><div class="workshop-option"><h3>Envie de participer à un atelier ?</h3><p>Contactez-moi pour connaître la liste des ateliers en cours ou à venir.</p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfR9nRazxEXFbNk45ITbph6QbWxK6ki3lMsfRRdWmO7Nmc6Kg/viewform" rel="noopener noreferrer" target="_blank">Participer à un atelier ↗</a></div><div class="workshop-option"><h3>Vous souhaitez organiser un atelier ?</h3><p>Association, entreprise, établissement d’enseignement : construisons une intervention adaptée à votre public et à vos objectifs.</p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfR9nRazxEXFbNk45ITbph6QbWxK6ki3lMsfRRdWmO7Nmc6Kg/viewform" rel="noopener noreferrer" target="_blank">Organiser un atelier ↗</a></div></div></div><div class="workshop-media"><h3>Au cœur<br/><em>d’un atelier.</em></h3><p class="workshop-video-context">Parmi les ateliers que je propose, découvrez <strong>« Chanter en anglais »</strong>, une expérience autour de la voix, du rythme et de l’interprétation, en partenariat avec <strong>Tous en scène</strong> et <strong>Le Boucanier (78)</strong>.</p><div class="shorts-grid"><figure class="short-item"><div class="short-video"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/MCh0HUmyoak" title="Chanter en anglais, extrait 01 : paroles &amp; prononciation"></iframe></div><figcaption><span>Extrait 01</span><strong>Paroles &amp; prononciation</strong></figcaption></figure><figure class="short-item"><div class="short-video"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/gLT9mAEGT7Y" title="Chanter en anglais, extrait 02 : rythme &amp; interprétation"></iframe></div><figcaption><span>Extrait 02</span><strong>Rythme &amp; interprétation</strong></figcaption></figure></div></div></div></section>
 <section class="section music" id="musique"><div class="wrap"><span class="eyebrow">Musique &amp; scène</span><h2 class="section-title">Le goût<br/><em>du live.</em></h2><p class="intro">Chanter, jouer de la guitare, partager la scène avec d’autres musiciens. J’aime l’énergie des concerts, les rencontres musicales et cette complicité unique avec le public.</p><div class="music-grid"><figure><img alt="Susan Brown sur scène, photographie acoustique" loading="lazy" src="assets/acoustic.jpg"/></figure><div class="music-detail">
 <span class="eyebrow">MUSIQUE EN LIVE</span>
