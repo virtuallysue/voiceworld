@@ -451,6 +451,106 @@ footer{background:#211a35}
  color:#3b2038;
  box-shadow:0 6px 17px rgba(165,70,99,.19);
 }
+
+/* V31 — expérimentation colorimétrique : bleu pétrole, vert canard et cuivre.
+   Les couleurs du flyer sont évoquées en sourdine ; contenu et mise en page inchangés. */
+:root{
+  --ink:#233440;
+  --paper:#faf6ef;
+  --soft:#edf3f0;
+  --muted:#52636a;
+  --red:#b76543;
+  --red-dark:#944a32;
+  --berry:#237a78;
+  --teal:#237a78;
+  --peach:#e6b977;
+  --stroke:#d8e0db;
+  --dark:#153b52;
+  --champagne:#e6b977;
+  --copper:#d78257;
+  --sea:#237a78;
+}
+::selection{background:#d4e7de;color:#153b52}
+body{background:#faf6ef;color:#233440}
+.eyebrow,.overline:before,.section-title em{color:#a9583b}
+.body-copy,.bio-text,.coaching-lead>p:not(.coaching-kicker),.coaching-topic p{color:#47575c}
+.site-header{background:#153b52;border-bottom:1px solid rgba(230,185,119,.19)}
+.logo b,.nav a:hover{color:#e6b977}
+.logo-sub{color:#d7e5df}
+.nav .nav-contact{background:#d78257;border-color:#d78257;color:#183b4b}
+.nav .nav-contact:hover{background:#e6a06f;border-color:#e6a06f;color:#153b52}
+.hero{background:linear-gradient(125deg,#173a55 0%,#153b52 59%,#16555c 100%)}
+.hero:before{background:radial-gradient(circle at 14% 12%,rgba(38,126,133,.24),transparent 33%),radial-gradient(circle at 86% 22%,rgba(27,131,139,.25),transparent 35%),radial-gradient(circle at 75% 86%,rgba(215,130,87,.14),transparent 30%)}
+.hero .eyebrow{color:#e4c68d}
+.hero-title em,.poster-title em{color:#e6b977}
+.hero-note{color:#edf0e9}
+.hero-poster{background:linear-gradient(150deg,#17435a 0%,#15324b 51%,#16636a 100%);border-color:rgba(230,185,119,.24)}
+.hero-poster:before{background:radial-gradient(circle,rgba(215,130,87,.30),transparent 70%)}
+.hero-poster:after{background:radial-gradient(circle,rgba(50,155,146,.28),transparent 70%)}
+.poster-kicker,.poster-note small{color:#e6d4b4}
+.poster-note b{color:#e6b977}
+.btn-red,.nav .nav-contact{background:#d78257;border-color:#d78257;color:#183b4b}
+.btn-red:hover{background:#e7a170;border-color:#e7a170;color:#183b4b}
+.btn-outline:hover{background:#153b52}
+.services{background:#eaf1ef}
+.service-card{background:#fffdf8;border-color:#d4e1dc}
+.service-card:hover{background:#f3f9f6;border-color:#9bc2b9}
+.service-count,.service-arrow{color:#a9583b}
+.statement{background:#e0ebe6}
+.statement em{color:#1d7374}
+.statement .eyebrow{color:#4c7171}
+.vocal-detail{background:#fdfaf4}
+.speaking-detail{background:#ecf3f1}
+.coaching-kicker{color:#234554}
+.coaching-content{border-color:#cbded9}
+.coaching-topic{border-bottom-color:#cbded9}
+.coaching-topic-label{color:#237a78}
+#coaching-vocal .coaching-group-label{color:#237a78}
+#coaching-vocal .coaching-topic-card{background:linear-gradient(115deg,#fffefa 0%,#f2f8f5 100%);border-color:#bfd9d2;border-left:3px solid #237a78;box-shadow:0 9px 24px rgba(18,73,82,.045)}
+.coaching-flex{border-left-color:#237a78;background:#fffdfa;color:#28414b}
+.workshops{background:#f0f3ee}
+.workshop-media{background:linear-gradient(180deg,#fffdfa,#f1f7f3);border-color:#c8dcd5}
+.workshop-media:before{color:#237a78}
+.workshop-option{background:#fffefa;border-color:#c8ddd6}
+.workshop-option p,.workshop-media p{color:#4b5b5d}
+.music{background:linear-gradient(115deg,#153b52 0%,#14374d 55%,#165b61 100%);color:#fcf8f1}
+.music .eyebrow,.music .section-title em{color:#e6b977}
+.music .intro{color:#e9eee8}
+.music-detail{background:linear-gradient(160deg,#214b60 0%,#1d4b56 100%)}
+.music-detail p{color:#ebf1eb}
+.music-platforms .music-player,.music-youtube-feature{background:linear-gradient(155deg,#214759 0%,#1c4e58 100%);border:1px solid rgba(230,185,119,.20)}
+.music-platforms .music-player>span,.music-youtube-copy .eyebrow{color:#e6b977}
+.music-sub-link{color:#f4d1a3;border-bottom-color:rgba(230,185,119,.7)}
+.music-sub-link:hover{color:#ffffff}
+.music .music-main-cta{background:#d78257;border-color:#d78257;color:#153b52}
+.music .music-main-cta:hover{background:#e6a06f;border-color:#e6a06f}
+.music-links a{border-bottom-color:#e6b977}
+.gallery{background:#fdfaf5}
+.talks{background:#ecf1ef}
+.talk-card{background:#fffefa;border-color:#d2e0da;border-left:3px solid #237a78}
+.contact{background:#153b52;color:#fff9ef}
+.contact .eyebrow,.contact .section-title em{color:#e6b977}
+.contact p,.contact-message p{color:#edf0ea}
+.contact-social a{border-bottom-color:#e6b977;color:#fff9ef}
+footer{background:#102e43;color:#e1ece8}
+.footer-flex a{color:#e6b977}
+/* CTA Google Form : cuivre vivant sans devenir sombre ni criard */
+.coaching-detail .textlink,.talks .textlink,.workshop-option a{
+ background:#e5a47b;
+ border:1.5px solid #bd7651;
+ color:#243d48;
+ box-shadow:0 4px 13px rgba(123,95,64,.14);
+}
+.coaching-detail .textlink:hover,.talks .textlink:hover,.workshop-option a:hover{
+ background:#efbd95;
+ border-color:#a86343;
+ color:#173b4c;
+ box-shadow:0 6px 18px rgba(123,95,64,.20);
+}
+.coaching-detail .textlink:focus-visible,.talks .textlink:focus-visible,.workshop-option a:focus-visible{outline-color:#237a78}
+/* Mobile : les nouveaux contrastes restent stables aux petits formats. */
+@media(max-width:760px){.hero{background:linear-gradient(155deg,#153b52,#195d61)}.contact{background:#153b52}}
+
 </style>
 </head>
 <body>
